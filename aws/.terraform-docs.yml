@@ -1,0 +1,30 @@
+version: ">= 0.16.0, < 1.0.0"
+
+formatter: markdown
+
+header-from: docs/README.header.md
+footer-from: docs/README.footer.md
+
+sections:
+  hide: 
+    - resources
+    - modules
+    - data-sources
+
+
+output:
+  file: "./README.md"
+  mode: replace
+  template: |-
+    {{ .Content }}
+
+sort:
+  enabled: true
+  by: required
+
+settings:
+  anchor: true
+  indent: 2
+  required: true
+  default: true
+  sensitive: false
