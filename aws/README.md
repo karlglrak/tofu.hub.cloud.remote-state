@@ -2,7 +2,7 @@
 
 This repository manages the infrastructure used to manage Terraform or Tofu's remote state.
 
-As such, it is the only repository where a local state file should be checked into the repository.
+Running this repository will generate a local `.tfstate` file. Consideration should be given as to where this should be stored for future usage.
 
 ## AWS
 
